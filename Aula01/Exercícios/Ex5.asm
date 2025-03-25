@@ -3,7 +3,7 @@
 		# Dados do programa
 		.align 0 # 1 byte (chars)
 str1:		.ascii "Hello" # 5 bytes de char
-str1_cont:	.space	7 # Alocando 12 bytes de memória extra após a string 1
+str1_cont:	.space	7 # Alocando 7 bytes de memória extra após a string 1
 str2:		.asciz "World!" # 6 bytes de char + 1 byte de \0
 		
 		.text
