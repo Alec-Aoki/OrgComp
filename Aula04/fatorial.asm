@@ -41,11 +41,11 @@ main:
 fatorial:
 		li s1, 1 # Resposta
 		mv t0, a0 # Copiando o número a ser calculado (a0) para t0
-		beq  t0, zero, fim
-loop:		
+		beq  t0, zero, fimFat
+loopFat:		
 		mul s1, s1, t0 # res = res * n
 		addi t0, t0, -1 # n--
-		bne t0, zero, loop # Volta para o início do loop caso t0 (n) seja diferente de 0
-fim:		
+		bne t0, zero, loopFat # Volta para o início do loop caso t0 (n) seja diferente de 0
+fimFat:		
 		mv a1, s1 # Colocando a resposta (s1) em a1
 		jr ra # Voltando para o return address
